@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "772715503070",
+    "project_id": "buble-app-a010a",
+    "storage_bucket": "buble-app-a010a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772715503070:android:a3868148ca089e7ad8914f",
+        "android_client_info": {
+          "package_name": "com.example.bubleApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772715503070-k45cn8lvu489c8smp48vcsvq0go3knod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bubleApp",
+            "certificate_hash": "0a11188b828063a9418571ceeb15d4ada0814b5b"
+          }
+        },
+        {
+          "client_id": "772715503070-9befuqo9hruoa0qqhidu7hdqvvftgc8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDZWH5QX1uHq-Yuyc8oHWrGOKup1Q_zTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772715503070-9befuqo9hruoa0qqhidu7hdqvvftgc8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width ="match_parent"
+    android:layout_height ="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id ="@+id/pdfRl"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/gray02"
+            android:layout_marginRight="5dp">
+
+            <!-- PdfView -->
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTv"
+            android:layout_toStartOf="@id/moreBtn"
+            android:layout_toLeftOf="@+id/moreBtn"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:layout_toRightOf="@+id/pdfRl"
+            android:maxLines="1"
+            android:text="Titre Document"
+            tools:ignore="NotSibling" />
+
+        <TextView android:id="@+id/descriptionTv"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description Document"
+            android:layout_toEndOf="@id/pdfRl"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/titleTv"
+            android:maxLines = "1"
+            android:ellipsize="end"
+            android:layout_toRightOf="@id/pdfRl" />
+
+
+        <TextView android:id="@+id/categoryTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categorie"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:maxLines = "1"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView android:id="@+id/sizeTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13 MB"
+            android:layout_alignParentEnd="@id/pdfRl"
+            android:layout_alignParentBottom="true"
+            android:maxLines = "1"
+            android:layout_alignParentRight="@id/pdfRl" />
+
+        <TextView android:id="@+id/dateTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dd/MM/yyyy"
+            android:layout_toEndOf="@+id/sizeTv"
+            android:layout_toStartOf="@+id/categoryTv"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:maxLines = "1"
+            android:layout_toRightOf="@+id/sizeTv"
+            android:layout_toLeftOf="@+id/categoryTv"
+            android:gravity="center_horizontal" />
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_moe_black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
